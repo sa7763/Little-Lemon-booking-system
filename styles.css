@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #edefee;
+   font-family: 'Markazi Text', serif;
+   /* margin: 3rem 5%; */
+   margin: 0;
+   padding: 0;
+
+}
+
+h1{
+    font-size: 4rem;
+     text-transform: capitalize;
+     text-align: center;
+     color: #495e57;
+     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+     0px -4px 10px rgba(255,255,255,0.3);
+}
+h2{
+    font-size: 2rem;
+     text-transform: capitalize;
+     color: #495e57;
+     text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+     0px -4px 10px rgba(255,255,255,0.3);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 2.5rem;
+    color:rgb(51, 51, 51) ;
+    /* margin-bottom: 5rem; */
+}
+header >img{
+    /* to center the img use only this property */
+    display: block;
+    margin: 5rem auto;
+}
+
+/* ---------------------navbar--------------------------- */
+nav{
+    background-color:#3D3E40;
+    border-radius:10px;
+    margin: 3rem 5%; 
+
+}
+nav ul {
+    padding: 2rem 0;
+    list-style: none;
+    text-align: center;
+
+}
+nav li{
+    display: inline-block;
+    position: relative;
+
+}
+
+
+nav a{
+    font-size: 2rem;
+     padding:0  2rem; 
+    color: white;
+    text-decoration: none;
+    
+}
+nav a::after{
+    content: "";
+    position: absolute;
+    left:10%;
+    bottom: 0;
+    width: 0%;
+    height: 1px;
+    transition: width 0.7s ease;
+    background-color: hsl(50, 88%, 46%) ;
+}
+nav a:hover::after,
+nav a:hover{
+    color: hsl(50, 88%, 46%);
+    width: 80%;
+}
+
+/*-----------------------------------------main-------------------------*/
+/*------------------------offer*--------------------*/
+.container{
+    margin: 0 5rem;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+
+main .offers img {
+    width: 80vw;
+    height:40vh;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    opacity: .9;
+    
+}
+.offers {
+    position: relative;
+}
+main .offer-anmat{
+    position: absolute;
+    left:10%;
+    top:0 ;
+}
+main .offer-anmat h1{
+    color: white;
+    text-align: left;
+    font-size: 2rem;
+    width: 18rem;
+    border-right: 4px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(18, end) infinite  , 
+    blink-caret .5s step-end infinite alternate;
+}
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+main .offer-anmat p{
+    color: rgb(223, 223, 223);
+    width: 50vw;
+    text-align: left;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+/*---------------------3colums artical-------------*/
+
+
+section .box{
+ text-align: center;
+ width:250vw ;
+ height:470px ;
+
+}
+section .box img{
+    width: 13rem  ; 
+    height:13rem;
+    border-radius: 50%; 
+
+}
+
+section figure p{
+    
+    font-size: 1rem;
+    line-height:1.5rem;
+   
+   
+}
+
+article  {
+    flex: 1;
+    /* padding: -10rem; */
+
+}
+main .box{
+    margin: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: transform 0.7s ease,
+    opacity .8s ease;
+    border-radius: 20px;
+    opacity: .8;
+
+
+}
+main .box:hover{
+    transform: translateY(20px) ;
+    opacity: 1;
+
+    
+    }
+/*-------------------------------footer-----------------*/
+footer{
+
+    display: flex;
+    background-color: #3D3E40;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+ footer div{
+    flex: 1;
+    padding: 1rem 5rem;
+ }
+ footer p{
+    color: white;
+    font-weight: lighter;
+    opacity: .6;
+ }
+
+ 
